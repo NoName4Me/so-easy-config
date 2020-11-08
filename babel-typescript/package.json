@@ -1,0 +1,19 @@
+{
+  "name": "babel-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn gen-dts && yarn babel",
+    "prebuild": "rm -rf lib",
+    "type-check": "tsc",
+    "babel": "babel src --extensions '.ts' --out-dir lib",
+    "gen-dts": "tsc --declaration --outDir lib/ --emitDeclarationOnly --noEmit false"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-typescript": "^7.8.3",
+    "typescript": "^3.8.3"
+  }
+}

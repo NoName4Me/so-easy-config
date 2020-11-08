@@ -1,0 +1,17 @@
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "babel": "yarn babel:cjs && yarn babel:esm",
+    "babel:esm": "BABEL_ENV=esm babel src --out-dir lib/esm",
+    "babel:cjs": "BABEL_ENV=cjs babel src --out-dir lib/cjs"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.7"
+  }
+}
