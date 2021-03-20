@@ -1,0 +1,6 @@
+{
+  "packages": [
+    "babel/*","jest/*","rollup/*"
+  ],
+  "version": "0.0.0"
+}
